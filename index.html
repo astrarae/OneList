@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Pacifico&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="adaptive.css">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>OneList</title>
+</head>
+<body>
+
+
+  <section class="landing-section">
+    <div class="todo-section">
+      <div class="todo-card">
+        <div class="todo-info">
+          <p>To Do</p>
+
+          <div class="todo-info-box">
+            <p>List</p>
+          </div>
+        </div>
+        
+        <div class="todo-input">
+          <input id="todo-input-place" type="text" placeholder="Add Item">
+          <button onclick="add_task()">+</button>
+        </div>
+
+        <div class="todo-active-zone">
+
+        </div>
+      </div>
+    </div>
+
+    <div class="statistics-section">
+
+      <div class="statistic-card">
+        <div class="stat-logo"><p>To Do</p></div>
+        <div class="stat-indicator">
+          <p><span class="digit-indicator"></span></p>
+          <div class="stat-box">
+            <p><span class="letter-indicator">tasks</span></p>
+          </div>
+        </div>
+      </div>
+
+
+      <div id="ongoing-card" class="statistic-card">
+        <div class="stat-logo"><p>On Going</p></div>
+        <div class="stat-indicator">
+          <p><span class="digit-indicator2"></span></p>
+          <div class="stat-box">
+            <p><span class="letter-indicator">tasks</span></p>
+          </div>
+        </div>
+      </div>
+
+      <div id="completed-card" class="statistic-card">
+        <div class="stat-logo"><p>Completed</p></div>
+        <div class="stat-indicator">
+          <p><span class="digit-indicator3"></span></p>
+          <div class="stat-box">
+            <p><span class="letter-indicator">tasks</span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="performance-card">
+        <div class="performance-logo"><p>To Do</p></div>
+        <div class="performance-box">
+          <div class="performance-completed">
+            <div class="performance-container">
+              <p><span class="performance-completed-letter">completed</span></p>
+              <p><span class="performance-completed-digit"></span></p>
+            </div>
+          </div>
+
+          <div class="performance-total">
+            <p><span class="performance-total-letter">out of</span></p>
+            <p><span class="performance-total-digit"></span></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,341 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    transition: 0.5s ease-in;
+}
+
+body {
+    background-image: url("assets/img/windows.png");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+p{
+    font-family: "Philosopher",sans-serif;
+
+}
+
+.landing-section{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10%;
+}
+.todo-section{
+    width: 70%;
+    height: auto;
+    margin-top: 3.75%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.todo-card{
+    width: 300px;
+    height: 500px;
+    background-color: rgba(226, 234, 244, 0.6);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*======To-Do Logo======*/
+.todo-info{
+    width: 100%;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5%;
+}
+.todo-info p{
+    margin-left: 8%;
+    font-size: 24px;
+}
+
+.todo-info-box{
+    width: 79px;
+    height: 28px;
+    background-color: transparent;
+    border-radius: 30px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.todo-info-box{
+    padding-right: 3%;
+}
+
+.todo-info-box p{
+    font-size: 24px;
+}
+
+/*=================================*/
+
+/*======To-Do Input======*/
+
+.todo-input{
+    width: 250px;
+    height: 45px;
+    background-color: rgba(204, 205, 206, 0.6);
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: 0.3s ease-in;
+}
+.todo-input:hover{
+    transform: scale(1.05);
+}
+
+input{
+    width: 80%;
+    height: 90%;
+    border:none;
+    outline: none;
+    background-color: transparent;
+    transition: 0.3s ease-in;
+}
+
+
+input::placeholder{
+    font-family: "Philosopher",sans-serif;
+    font-size: 12px;
+    color: black;
+}
+
+button{
+    border: 1px solid black;
+    outline: none;
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    transition: 0.3s ease-in;
+}
+
+button:hover{
+    background-color: rgba(226, 234, 244, 0.6);
+    transform: scale(1.1);
+}
+
+
+/*=================================*/
+
+/*======To-Do Active Zone======*/
+
+.todo-active-zone{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.todo-active-tab{
+
+    width: 250px;
+    height: 50px;
+    background-color: rgba(204, 205, 206, 0.6);
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    transition: 0.3s ease-in;
+
+}
+
+.todo-active-tab.show{
+    margin-top: 7%;
+}
+.todo-active-tab.remove{
+    transform: scale(0.05);
+}
+
+.todo-active-tab:hover{
+    transform: scale(1.05);
+}
+
+.todo-active-tab p{
+    font-size: 15px;
+    margin-left: 5%;
+}
+
+.todo-active-tab button{
+    border: 1px solid black;
+    outline: none;
+    background-color: transparent;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    margin-left: 5%;
+
+}
+.todo-active-tab button:hover{
+    background-color: rgba(226, 234, 244, 0.6);
+}
+
+/*=================================*/
+
+.statistics-section{
+    width: 70%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*=================================*/
+
+/*======Statistics Cards======*/
+
+.statistic-card{
+    width: 250px;
+    height: 275px;
+    border-radius: 15px;
+    background-color: rgba(226, 234, 244, 0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 7%;
+    transition: 0.3s ease-in;
+}
+
+.statistic-card:hover{
+    transform: scale(1.05);
+}
+
+.stat-indicator{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 120px;
+    height: 65px;
+    padding-left: 15%;
+    position: relative;
+    bottom: 1%;
+}
+
+.stat-logo{
+    font-size: 32px;
+    padding-left: 15%;
+    position: relative;
+    bottom: 7%;
+}
+
+.digit-indicator{
+    font-size: 64px;
+}
+
+.digit-indicator2{
+    font-size: 64px;
+}
+
+.digit-indicator3{
+    font-size: 64px;
+}
+
+
+.letter-indicator{
+    font-size: 20px;
+
+}
+
+.stat-box{
+    height: 120%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 5%;
+}
+
+.performance-card{
+    width: 300px;
+    height: 275px;
+    border-radius: 15px;
+    background-color: rgba(226, 234, 244, 0.6);
+    transition: 0.3s ease-in;
+}
+.performance-card:hover{
+    transform: scale(1.05);
+}
+.performance-logo{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: flex-start;
+}
+.performance-logo p{
+    font-size: 32px;
+    padding-left: 15%;
+    position: relative;
+    top: 25%;
+}
+.performance-box{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+}
+.performance-completed{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.performance-total{
+    width: 50%;
+    height: 96%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+
+}
+
+.performance-container{
+    width: 75px;
+    height: 75px;
+    padding-left: 15%;
+}
+
+.performance-completed-letter{
+    position: relative;
+    top: 25%;
+    font-size: 20px;
+}
+
+.performance-completed-digit{
+    font-size: 64px;
+    
+}
+
+.performance-total-digit{
+    font-size: 64px;
+}
+.performance-total-letter{
+    font-size: 20px;
+}

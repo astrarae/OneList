@@ -1,0 +1,45 @@
+@media (max-width: 426px){
+    .statistic-card{
+        display: none;
+    }
+}
+
+
+@media (max-width: 769px){
+    #ongoing-card{
+        display: none;
+    }
+    #completed-card{
+        display: none;
+    }
+
+    .statistics-section{
+        width: 80%;
+    }
+
+    .todo-section{
+        width: 80%;
+        margin-top: 10%;
+    }
+}
+
+@media (max-width: 1025px){
+    #completed-card{
+        display: none;
+    }
+    .statistics-section{
+        width: 90%;
+    }
+    .todo-section{
+        width: 90%;
+    }
+}
+
+@media (max-width: 1441px){
+    .statistics-section{
+        width: 90%;
+    }
+    .todo-section{
+        width: 90%;
+    }
+}
