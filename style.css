@@ -138,13 +138,34 @@ button:hover{
 /*======To-Do Active Zone======*/
 
 .todo-active-zone{
+    margin-top: 5%;
     width: 100%;
-    height: auto;
+    height: 68%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    overflow:scroll;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.todo-active-zone::-webkit-scrollbar{
+    background-color: transparent;
+    width: 9px;
+    transition: 0.3s ease-in;
+}
+.todo-active-zone::-webkit-scrollbar-thumb{
+    background-color: rgba(204, 205, 206, 0.6);
+    border-radius: 50px;
+    transition: background 0.3s ease-in;
+    
+}
+.todo-active-zone::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(to bottom,
+    #0078D4,    /* Fluent Blue */
+    #004E8C,    /* Darker Blue */
+    #E43BA6     /* Fluent-style Pink (like Magenta) */
+    );
 
 }
 
@@ -158,11 +179,12 @@ button:hover{
     justify-content: flex-start;
     align-items: center;
     transition: 0.3s ease-in;
-
+    opacity: 0;
 }
 
 .todo-active-tab.show{
     margin-top: 7%;
+    opacity: 1;
 }
 .todo-active-tab.remove{
     transform: scale(0.05);
